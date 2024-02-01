@@ -8,11 +8,11 @@
     </style>
   </head>
     <body style="margin: 0px; overflow: hidden">
-    <a-scene arjs='sourceType: webcam;'>
+    <a-scene arjs='sourceType: webcam; debugUIEnabled: true;'>
         <a-assets>
-            <a-asset-items id="chessboard" src="assets/scene.gltf"></a-asset-items>
+            <a-asset-items id="chessboard" src="assets/asset1/scene.gltf"></a-asset-items>
         </a-assets>
-        <a-entity gltf-model="#chessboard" position="2 -1 0" scale="0.06 0.06 0.06"></a-entity>
+        <a-entity gltf-model="#chessboard" position="1.5 -0.1 0" scale="10 10 10"></a-entity>
     </a-scene>
  </body>
 </html>
