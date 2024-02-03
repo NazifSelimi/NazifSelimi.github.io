@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Marker-based AR</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <style>
-        #chessboard{ size: 1, 1, 1;}
-    </style>
-  </head>
-    <body style="margin: 0px; overflow: hidden">
-    <a-scene arjs='sourceType: webcam; debugUIEnabled: true;'>
-        <a-assets>
-            <a-asset-items id="chessboard" src="assets/asset2/scene.gltf"></a-asset-items>
-        </a-assets>
-        <a-entity gltf-model="#chessboard" rotation="0 0 0"position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-    </a-scene>
- </body>
+</head>
+<body style="margin: 0px; overflow: hidden">
+<a-scene arjs='sourceType: webcam; debugUIEnabled: true;'>
+    <a-assets>
+        <a-asset-item id="chessboardModel" src="assets/asset2/scene.gltf"></a-asset-item>
+        <a-asset-item id="pawnModel" src="assets/asset2/pawn/scene.gltf"></a-asset-item>
+    </a-assets>
+    <!-- Chessboard entity -->
+    <a-entity id="chessboard" gltf-model="#chessboardModel" rotation="0 0 0" position="-1 0 0" scale="0.5 0.5 0.5">
+        <!-- Pawn entity as a child of the chessboard -->
+        <a-entity position="0.025 0.075 0.015" scale="0.045 0.045 0.045" gltf-model="#pawnModel"></a-entity>
+
+    </a-entity>
+</a-scene>
+</body>
 </html>
