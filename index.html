@@ -13,14 +13,12 @@
     <a-scene arjs='sourceType: webcam; debugUIEnabled: false;'>
         <a-assets>
             <a-asset-item id="chessboardModel" src="assets/asset2/scene.gltf"></a-asset-item>
-        <a-asset-item id="pawnModel" src="assets/asset2/pawn/scene.gltf"></a-asset-item>
+            <a-asset-item id="pawnModel" src="assets/asset2/pawn/scene.gltf"></a-asset-item>
         </a-assets>
         <a-marker preset="hiro">
             <!-- Initially position the model directly on top of the marker -->
-            <a-entity id="chessboard" gltf-model="#chessboardModel" rotation="0 0 0" position="-1 0 0" scale="0.5 0.5 0.5">
-                <!-- Pawn entity as a child of the chessboard -->
+            <a-entity gltf-model="#chessboard"  rotation="0 0 0" position="0 0 0" scale="15 15 15 ">
                 <a-entity position="0.025 0.075 0.015" scale="0.045 0.045 0.045" gltf-model="#pawnModel"></a-entity>
-        
             </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
