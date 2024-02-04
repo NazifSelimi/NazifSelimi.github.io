@@ -12,20 +12,24 @@
 <body>
     <a-scene arjs='sourceType: webcam; debugUIEnabled: false;'>
         <a-assets>
-            <a-asset-item id="chessboard" src="assets/asset2/scene.gltf"></a-asset-item>
-            <a-asset-item id="pawnModel" src="assets/asset2/pawn/scene.gltf"></a-asset-item>
+            <a-asset-item id="chessboardModel" src="assets/asset1/chess_board.glb"></a-asset-item>
+            <a-asset-item id="blackPawnModel" src="assets/asset1/blackPieces/black_pawn.glb"></a-asset-item>
+            <a-asset-item id="blackRookModel" src="assets/asset1/blackPieces/black_rook.glb"></a-asset-item>
         </a-assets>
         <a-marker preset="hiro">
             <!-- Initially position the model directly on top of the marker -->
             <a-entity gltf-model="#chessboard"  rotation="0 0 0" position="0 0 0" scale="10 10 10 ">
-                <a-entity position="-0.12 0 -0.175" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
-                <a-entity position="-0.12 0 -0.125" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
-                <a-entity position="-0.12 0 -0.075" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
-                <a-entity position="-0.12 0 -0.025" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
-                <a-entity position="-0.12 0 0.025" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
-                <a-entity position="-0.12 0 0.075" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
-                <a-entity position="-0.12 0 0.125" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
-                <a-entity position="-0.12 0 0.175" scale="0.06 0.1 0.06" gltf-model="#pawnModel"></a-entity>
+                <a-entity id="#a7Pawn" position="-0.073 0 0.1004" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity>
+                <a-entity id="#b7Pawn" position="-0.073 0 0.0716" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity>
+                <a-entity id="#c7Pawn" position="-0.073 0 0.0428" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity>
+                <a-entity id="#d7Pawn" position="-0.073 0 0.0140" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity>
+                <a-entity id="#e7Pawn" position="-0.073 0 -0.0148" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity>
+                <a-entity id="#f7Pawn" position="-0.073 0 -0.0436" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity>
+                <a-entity id="#g7Pawn" position="-0.073 0 -0.0724" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity> 
+                <a-entity id="#h7Pawn" position="-0.073 0 -0.1012" scale="0.009 0.009 0.009" gltf-model="#blackPawnModel"></a-entity>
+        <!-- Black pawns -->
+        <!-- Black rooks -->
+                <a-entity id="#h8Rook" position="-0.103 0 -0.1012" scale="0.009 0.009 0.009" gltf-model="#blackRookModel"></a-entity>
             </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
