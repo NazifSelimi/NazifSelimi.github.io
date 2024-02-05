@@ -307,22 +307,4 @@
     </a-scene>
   </body>
 </html>
-<script>
-  AFRAME.registerComponent("smooth-movement", {
-    schema: {
-      smoothFactor: { type: "number", default: 0.1 },
-    },
-    init: function () {
-      this.previousPositions = [];
-    },
-    tick: function () {
-      let currentPosition = this.el.object3D.position;
-      if (this.previousPositions.length > 0) {
-        currentPosition.lerp(this.previousPositions[0], this.data.smoothFactor);
-      }
 
-      this.previousPositions.unshift(currentPosition.clone());
-      if (this.previousPositions.length > 5) this.previousPositions.pop();
-    },
-  });
-</script>
