@@ -76,54 +76,59 @@
       </a-assets>
       <a-marker preset="hiro" markerhandler>
         <!-- Initially position the model directly on top of the marker -->
-        <a-entity gltf-model="#chessboardModel" rotation="0 0 0" position="0 0 0" scale="10 10 10" smooth-movement></a-entity>
-
+        <a-entity
+          gltf-model="#chessboardModel"
+          position="0 0 0"
+          rotation="0 0 0"
+          scale="1 1 1"
+          smooth-tracking
+        >
           <!-- Black pawns -->
           <a-entity
             id="#a7Pawn"
-            position="-0.073 0.01 0.1004"
+            position="-0.073 0 0.1004"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#b7Pawn"
-            position="-0.073 0.01 0.0716"
+            position="-0.073 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#c7Pawn"
-            position="-0.073 0.01 0.0428"
+            position="-0.073 0 0.0428"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#d7Pawn"
-            position="-0.073 0.01 0.0140"
+            position="-0.073 0 0.0140"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#e7Pawn"
-            position="-0.073 0.01 -0.0148"
+            position="-0.073 0 -0.0148"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#f7Pawn"
-            position="-0.073 0.01 -0.0436"
+            position="-0.073 0 -0.0436"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#g7Pawn"
-            position="-0.073 0.01 -0.0724"
+            position="-0.073 0 -0.0724"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#h7Pawn"
-            position="-0.073 0.01 -0.1012"
+            position="-0.073 0 -0.1012"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
@@ -131,13 +136,13 @@
           <!-- Black rooks -->
           <a-entity
             id="#h8Rook"
-            position="-0.103 0.01 -0.1012"
+            position="-0.103 0 -0.1012"
             scale="0.009 0.009 0.009"
             gltf-model="#blackRookModel"
           ></a-entity>
           <a-entity
             id="#a8Rook"
-            position="-0.103 0.01 0.1004"
+            position="-0.103 0 0.1004"
             scale="0.009 0.009 0.009"
             gltf-model="#blackRookModel"
           ></a-entity>
@@ -145,7 +150,7 @@
           <!-- Black knights -->
           <a-entity
             id="#c8Knight"
-            position="-0.103 0.01 0.0428"
+            position="-0.103 0 0.0428"
             scale="0.012 0.012 0.012"
             gltf-model="#blackKnightModel"
           ></a-entity>
@@ -159,13 +164,13 @@
           <!-- Black bishops -->
           <a-entity
             id="#b8Bishop"
-            position="-0.103 0.01 0.0716"
+            position="-0.103 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#blackBishopModel"
           ></a-entity>
           <a-entity
             id="#g8Bishop"
-            position="-0.103 0.01 -0.0724"
+            position="-0.103 0 -0.0724"
             scale="0.009 0.009 0.009"
             gltf-model="#blackBishopModel"
           ></a-entity>
@@ -175,7 +180,7 @@
           <!-- Black queen -->
           <a-entity
             id="#d8Queen"
-            position="-0.103 0.01 0.0140"
+            position="-0.103 0 0.0140"
             scale="0.009 0.009 0.009"
             gltf-model="#blackQueenModel"
           ></a-entity>
@@ -193,49 +198,49 @@
           <!-- white pawns -->
           <a-entity
             id="#a7Pawn"
-            position="0.073 0.01 0.1004"
+            position="0.073 0 0.1004"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
             id="#b7Pawn"
-            position="0.073 0.01 0.0716"
+            position="0.073 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
             id="#c7Pawn"
-            position="0.073 0.01 0.0428"
+            position="0.073 0 0.0428"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
             id="#d7Pawn"
-            position="0.073 0.01 0.0140"
+            position="0.073 0 0.0140"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
             id="#e7Pawn"
-            position="0.073 0.01 -0.0148"
+            position="0.073 0 -0.0148"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
             id="#f7Pawn"
-            position="0.073 0.01 -0.0436"
+            position="0.073 0 -0.0436"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
             id="#g7Pawn"
-            position="0.073 0.01 -0.0724"
+            position="0.073 0 -0.0724"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
             id="#h7Pawn"
-            position="0.073 0.01 -0.1012"
+            position="0.073 0 -0.1012"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
@@ -243,13 +248,13 @@
           <!-- white rooks -->
           <a-entity
             id="#h8Rook"
-            position="0.103 0.01 -0.1012"
+            position="0.103 0 -0.1012"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteRookModel"
           ></a-entity>
           <a-entity
             id="#a8Rook"
-            position="0.103 0.01 0.1004"
+            position="0.103 0 0.1004"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteRookModel"
           ></a-entity>
@@ -257,13 +262,13 @@
           <!-- white knights -->
           <a-entity
             id="#c8Knight"
-            position="0.103 0.01 0.0428"
+            position="0.103 0 0.0428"
             scale="0.012 0.012 0.012"
             gltf-model="#whiteKnightModel"
           ></a-entity>
           <a-entity
             id="#f8Knight"
-            position="0.103 0.01 -0.0436"
+            position="0.103 0 -0.0436"
             scale="0.012 0.012 0.012"
             gltf-model="#whiteKnightModel"
           ></a-entity>
@@ -271,13 +276,13 @@
           <!-- white bishops -->
           <a-entity
             id="#b8Bishop"
-            position="0.103 0.01 0.0716"
+            position="0.103 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteBishopModel"
           ></a-entity>
           <a-entity
             id="#g8Bishop"
-            position="0.103 0.01 -0.0724"
+            position="0.103 0 -0.0724"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteBishopModel"
           ></a-entity>
@@ -287,7 +292,7 @@
           <!-- white queen -->
           <a-entity
             id="#d8Queen"
-            position="0.103 0.01 0.0140"
+            position="0.103 0 0.0140"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteQueenModel"
           ></a-entity>
@@ -307,4 +312,43 @@
     </a-scene>
   </body>
 </html>
+<script>
+  AFRAME.registerComponent("smooth-tracking", {
+    schema: {
+      windowSize: { type: "int", default: 5 }, // Number of frames to average over
+    },
+    init: function () {
+      this.positions = [];
+      this.rotations = [];
+    },
+    tick: function () {
+      let position = AFRAME.utils.clone(this.el.getAttribute("position"));
+      let rotation = AFRAME.utils.clone(this.el.getAttribute("rotation"));
 
+      this.positions.push(position);
+      this.rotations.push(rotation);
+
+      if (this.positions.length > this.data.windowSize) {
+        this.positions.shift();
+        this.rotations.shift();
+      }
+
+      let averagedPosition = this.averageVectors(this.positions);
+      let averagedRotation = this.averageVectors(this.rotations);
+
+      this.el.setAttribute("position", averagedPosition);
+      this.el.setAttribute("rotation", averagedRotation);
+    },
+    averageVectors: function (vectors) {
+      return vectors.reduce(
+        (acc, v) => {
+          acc.x += v.x;
+          acc.y += v.y;
+          acc.z += v.z;
+          return acc;
+        },
+        { x: 0, y: 0, z: 0, w: 0 }
+      ); // w for quaternion, if applicable
+    },
+  });
+</script>
