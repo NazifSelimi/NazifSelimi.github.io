@@ -76,12 +76,8 @@
       </a-assets>
       <a-marker preset="hiro" markerhandler>
         <!-- Initially position the model directly on top of the marker -->
-        <a-entity
-          gltf-model="#chessboardModel"
-          rotation="0 0 0"
-          position="0 0 0"
-          scale="10 10 10 "
-        >
+        <a-entity gltf-model="#chessboardModel" rotation="0 0 0" position="0 0 0" scale="10 10 10" smooth-movement></a-entity>
+
           <!-- Black pawns -->
           <a-entity
             id="#a7Pawn"
@@ -312,19 +308,21 @@
   </body>
 </html>
 <script>
-  AFRAME.registerComponent("markerhandler", {
+  AFRAME.registerComponent("smooth-movement", {
+    schema: {
+      smoothFactor: { type: "number", default: 0.1 },
+    },
     init: function () {
-      var marker = this.el;
+      this.previousPositions = [];
+    },
+    tick: function () {
+      let currentPosition = this.el.object3D.position;
+      if (this.previousPositions.length > 0) {
+        currentPosition.lerp(this.previousPositions[0], this.data.smoothFactor);
+      }
 
-      marker.addEventListener("markerFound", function () {
-        var entity = marker.querySelector("[gltf-model]");
-        entity.setAttribute("visible", true);
-      });
-
-      marker.addEventListener("markerLost", function () {
-        var entity = marker.querySelector("[gltf-model]");
-        entity.setAttribute("visible", false);
-      });
+      this.previousPositions.unshift(currentPosition.clone());
+      if (this.previousPositions.length > 5) this.previousPositions.pop();
     },
   });
 </script>
