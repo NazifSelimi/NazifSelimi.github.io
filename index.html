@@ -77,11 +77,11 @@
       <a-marker preset="hiro" markerhandler>
         <!-- Initially position the model directly on top of the marker -->
         <a-entity
+          id="chessboard"
           gltf-model="#chessboardModel"
-          position="0 0 0"
           rotation="0 0 0"
-          scale="10 10 10"
-          smooth-tracking
+          position="0 0 0"
+          scale="15 15 15"
         >
           <!-- Black pawns -->
           <a-entity
@@ -92,7 +92,7 @@
           ></a-entity>
           <a-entity
             id="#b7Pawn"
-            position="-0.073 0 0.0716"
+            position="-0.043 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
@@ -104,13 +104,13 @@
           ></a-entity>
           <a-entity
             id="#d7Pawn"
-            position="-0.073 0 0.0140"
+            position="-0.013 0 0.0140"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
           <a-entity
             id="#e7Pawn"
-            position="-0.073 0 -0.0148"
+            position="-0.043 0 -0.0148"
             scale="0.009 0.009 0.009"
             gltf-model="#blackPawnModel"
           ></a-entity>
@@ -136,7 +136,7 @@
           <!-- Black rooks -->
           <a-entity
             id="#h8Rook"
-            position="-0.103 0 -0.1012"
+            position="-0.103 0 -0.0436"
             scale="0.009 0.009 0.009"
             gltf-model="#blackRookModel"
           ></a-entity>
@@ -149,28 +149,28 @@
           <!-- Black rooks -->
           <!-- Black knights -->
           <a-entity
-            id="#c8Knight"
-            position="-0.103 0 0.0428"
+            id="#b8Knight"
+            position="-0.043 0 0.0428"
             scale="0.012 0.012 0.012"
             gltf-model="#blackKnightModel"
           ></a-entity>
           <a-entity
-            id="#f8Knight"
-            position="-0.103 0 -0.0436"
+            id="#g8Knight"
+            position="-0.043 0 -0.0436"
             scale="0.012 0.012 0.012"
             gltf-model="#blackKnightModel"
           ></a-entity>
           <!-- Black knights -->
           <!-- Black bishops -->
           <a-entity
-            id="#b8Bishop"
-            position="-0.103 0 0.0716"
+            id="#c8Bishop"
+            position="-0.073 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#blackBishopModel"
           ></a-entity>
           <a-entity
-            id="#g8Bishop"
-            position="-0.103 0 -0.0724"
+            id="#f8Bishop"
+            position="0.013 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#blackBishopModel"
           ></a-entity>
@@ -189,7 +189,7 @@
           <!-- Black king -->
           <a-entity
             id="#e8King"
-            position="-0.103 0.01 -0.0148"
+            position="-0.103 0 -0.0724"
             scale="0.9 0.9 0.9"
             gltf-model="#blackKingpModel"
           ></a-entity>
@@ -197,49 +197,49 @@
 
           <!-- white pawns -->
           <a-entity
-            id="#a7Pawn"
+            id="#a2Pawn"
             position="0.073 0 0.1004"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
-            id="#b7Pawn"
+            id="#b2Pawn"
             position="0.073 0 0.0716"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
-            id="#c7Pawn"
-            position="0.073 0 0.0428"
+            id="#c2Pawn"
+            position="0.013 0 0.0428"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
-            id="#d7Pawn"
-            position="0.073 0 0.0140"
+            id="#d2Pawn"
+            position="0.013 0 0.0140"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
-            id="#e7Pawn"
-            position="0.073 0 -0.0148"
+            id="#e2Pawn"
+            position="0.043 0 -0.0148"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
-            id="#f7Pawn"
+            id="#f2Pawn"
             position="0.073 0 -0.0436"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
-            id="#g7Pawn"
+            id="#g2Pawn"
             position="0.073 0 -0.0724"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
           ></a-entity>
           <a-entity
-            id="#h7Pawn"
+            id="#h2Pawn"
             position="0.073 0 -0.1012"
             scale="0.009 0.009 0.009"
             gltf-model="#whitePawnModel"
@@ -248,7 +248,7 @@
           <!-- white rooks -->
           <a-entity
             id="#h8Rook"
-            position="0.103 0 -0.1012"
+            position="0.103 0 -0.0436"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteRookModel"
           ></a-entity>
@@ -262,13 +262,13 @@
           <!-- white knights -->
           <a-entity
             id="#c8Knight"
-            position="0.103 0 0.0428"
+            position="0.043 0 0.0428"
             scale="0.012 0.012 0.012"
             gltf-model="#whiteKnightModel"
           ></a-entity>
           <a-entity
             id="#f8Knight"
-            position="0.103 0 -0.0436"
+            position="0.043 0 -0.0436"
             scale="0.012 0.012 0.012"
             gltf-model="#whiteKnightModel"
           ></a-entity>
@@ -276,13 +276,13 @@
           <!-- white bishops -->
           <a-entity
             id="#b8Bishop"
-            position="0.103 0 0.0716"
+            position="0.043 0 0.0140"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteBishopModel"
           ></a-entity>
           <a-entity
             id="#g8Bishop"
-            position="0.103 0 -0.0724"
+            position="-0.017 0 -0.0724"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteBishopModel"
           ></a-entity>
@@ -292,16 +292,16 @@
           <!-- white queen -->
           <a-entity
             id="#d8Queen"
-            position="0.103 0 0.0140"
+            position="0.073 0 0.0428"
             scale="0.009 0.009 0.009"
             gltf-model="#whiteQueenModel"
           ></a-entity>
-          <!-- white queen -->
+          <!-- Black queen -->
 
           <!-- white king -->
           <a-entity
             id="#e8King"
-            position="0.098 0.01 -0.0148"
+            position="0.103 0 -0.0724"
             scale="0.9 0.9 0.9"
             gltf-model="#whiteKingpModel"
           ></a-entity>
